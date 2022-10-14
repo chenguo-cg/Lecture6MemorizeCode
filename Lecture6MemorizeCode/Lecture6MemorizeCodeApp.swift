@@ -1,17 +1,19 @@
 //
-//  Lecture6MemorizeCodeApp.swift
-//  Lecture6MemorizeCode
+//  Lecture4MemorizeApp.swift
+//  Lecture4Memorize
 //
 //  Created by Guo Chen on 10/14/22.
-//
+//..
 
 import SwiftUI
 
 @main
-struct Lecture6MemorizeCodeApp: App {
+struct Lecture5MemorizeApp: App {
+    private let game = EmojiMemoryGame()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            EmojiMemoryGameView(game: game)
         }
     }
 }
